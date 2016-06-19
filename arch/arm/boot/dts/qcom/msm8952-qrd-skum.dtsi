@@ -12,6 +12,7 @@
  */
 
 #include "msm8952-qrd.dtsi"
+#include "msm8952-mdss-panels.dtsi"
 
 &spmi_bus {
 	qcom,pmi8950@2 {

@@ -40,6 +40,10 @@ struct mmi_unit_info {
 /* Function that sets the modem reset value in the SMEM location
  * where mmi_unit_info is stored.
  */
+#if defined(CONFIG_MMI_UNIT_INFO)
 void mmi_set_pureason(uint32_t val);
+#else
+static void inline mmi_set_pureason(uint32_t val) { }
+#endif
 
 #endif
